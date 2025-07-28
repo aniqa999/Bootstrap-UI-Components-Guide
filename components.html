@@ -8,21 +8,75 @@
    <title>Components</title>
    <!-- font icons -->
    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-   <!-- Bootstrap + Steller  -->
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Great+Vibes&family=Indie+Flower&family=Lobster&family=Montserrat:wght@400;700&family=Pacifico&family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+<!-- Animate.css for entry animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Bootstrap Bundle CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
    <link rel="stylesheet" href="Component.css">
 </head>
 <body>
 
-   <!-- Page Header -->
-   <header class="header header-mini"> 
-      <div class="header-title">Components</div> 
-      <nav aria-label="breadcrumb">
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Components</li>
-         </ol>
-      </nav>
-   </header> <!-- End Of Page Header -->
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/riphah logo.jpg" alt="Logo" class="logo-img">
+      <span class="logo-text">UI Guide</span>
+    </div>
+
+    <input type="checkbox" id="menu-checkbox" />
+    <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">Buttons</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Primary</a></li>
+          <li><a href="#">Secondary</a></li>
+          <li><a href="#">Icon Buttons</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Forms</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Inputs</a></li>
+          <li><a href="#">Selects</a></li>
+          <li><a href="#">Toggles</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Cards</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Hover</a></li>
+          <li><a href="#">Image Cards</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Tables</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Basic Tables</a></li>
+          <li><a href="#">Striped</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
 
    <!-- main content -->
    <div class="container">
@@ -873,32 +927,87 @@
    </div>
    <!-- end of typography -->
 
+   <!-- Font Styles Section -->
+<section class="container my-5 font-section">
+  <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Explore Different Font Styles</h2>
+  <div class="row text-center g-4">
+    <div class="col-md-6 col-lg-4 animate__animated animate__zoomIn">
+      <p class="font1 hover-grow">Font 1 – Pacifico</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-1s">
+      <p class="font2 hover-grow">Font 2 – Bebas Neue</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__zoomIn animate__delay-2s">
+      <p class="font3 hover-grow">Font 3 – Dancing Script</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-1s">
+      <p class="font4 hover-grow">Font 4 – Indie Flower</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__zoomIn">
+      <p class="font5 hover-grow">Font 5 – Montserrat</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-1s">
+      <p class="font6 hover-grow">Font 6 – Lobster</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__zoomIn animate__delay-2s">
+      <p class="font7 hover-grow">Font 7 – Rubik Glitch</p>
+    </div>
+    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate__delay-2s">
+      <p class="font8 hover-grow">Font 8 – Great Vibes</p>
+    </div>
+  </div>
+</section>
+
+
+
    <!-- Page Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com" target="_blank">DevCRUD</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="socials">
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
+
+<footer class="footer-area py-5 text-white">
+  <div class="container">
+    <div class="row">
+      <!-- About Us -->
+      <div class="col-md-3 animate__animated animate__fadeInUp">
+        <h5>About Us</h5>
+        <p>We design modern UI components to simplify your development process and make your UI elegant and professional.</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-3 animate__animated animate__fadeInUp animate__delay-1s">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-md-3 animate__animated animate__fadeInUp animate__delay-2s">
+        <h5>Contact</h5>
+        <p>Email: support@uiguide.com</p>
+        <p>Phone: +92-300-1234567</p>
+        <p>Location: Lahore, Pakistan</p>
+      </div>
+      <!-- Social Media -->
+      <div class="col-md-3 animate__animated animate__fadeInUp animate__delay-3s">
+        <h5>Follow Us</h5>
+        <div class="social-icons d-flex gap-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-    </footer> 
-    <!-- End of page footer -->
-   
-   <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+      </div>
+    </div>
 
-    <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
+    <hr class="my-4" />
 
+    <div class="text-center">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> UI Components Guide. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+  
 </body>
 </html>
